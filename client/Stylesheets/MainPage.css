@@ -1,0 +1,243 @@
+/* Global Styles */
+.page-wrapper {
+    width: 83%;
+    min-height: calc(100vh - 64px); /* Adjust based on your navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.content-container {
+    max-width: 1100px;
+    width: 90%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Glow elements */
+.glow-element {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.5;
+}
+
+.glow-primary {
+    width: 300px;
+    height: 300px;
+    background: rgba(64, 128, 255, 0.3);
+    top: -50px;
+    left: -50px;
+}
+
+.glow-secondary {
+    width: 250px;
+    height: 250px;
+    background: rgba(128, 64, 255, 0.3);
+    bottom: -50px;
+    right: -50px;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-bottom: 4rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features-section {
+    margin-bottom: 4rem;
+}
+
+.features-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.features-description {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.primary-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, whitesmoke, lightgray);
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+    background-color: lightcyan;
+}MediaMedia Queries for Responsiveness */
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 768px) {
+    .page-wrapper {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .content-container {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .features-title {
+        font-size: 1.5rem;
+    }
+
+    .features-description {
+        font-size: 1rem;
+    }
+
+    .primary-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust glow elements for mobile screens */
+    .glow-primary {
+        width: 200px;
+        height: 200px;
+        top: -30px;
+        left: -30px;
+    }
+
+    .glow-secondary {
+        width: 150px;
+        height: 150px;
+        bottom: -30px;
+        right: -30px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-wrapper {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .content-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .features-title {
+        font-size: 1.8rem;
+    }
+
+    .features-description {
+        font-size: 1.1rem;
+    }
+
+    .primary-button {
+        padding: 0.9rem 2.2rem;
+        font-size: 1.05rem;
+    }
+
+    /* Adjust glow elements for tablet screens */
+    .glow-primary {
+        width: 250px;
+        height: 250px;
+        top: -40px;
+        left: -40px;
+    }
+
+    .glow-secondary {
+        width: 200px;
+        height: 200px;
+        bottom: -40px;
+        right: -40px;
+    }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 1025px) {
+    .page-wrapper {
+        width: 84%;
+        padding: 2rem;
+    }
+
+    .content-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-description {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .features-title {
+        font-size: 2rem;
+    }
+
+    .features-description {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
+    .primary-button {
+        padding: 1rem 2.5rem;
+        font-size: 1.125rem;
+    }
+
+    /* Adjust glow elements for larger screens */
+    .glow-primary {
+        width: 300px;
+        height: 300px;
+        top: -50px;
+        left: -50px;
+    }
+
+    .glow-secondary {
+        width: 250px;
+        height: 250px;
+        bottom: -50px;
+        right: -50px;
+    }
+ }

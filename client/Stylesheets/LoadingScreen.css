@@ -1,0 +1,37 @@
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh; /* Full viewport height */
+  padding: 20px; /* Padding for mobile */
+}
+
+.subtitle {
+  color: #898989; /* Color of the subtitle */
+  margin-top: 10px; /* Space above the subtitle */
+  font-size: 3rem; /* Font size for the subtitle */
+}
+
+/* New styles for loading number */
+.loading-number {
+  margin-top: 20px; /* Space above the loading number */
+  font-size: 1rem; /* Adjust as needed for visibility */
+  color: white; /* Color for loading number */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .loading-screen {
+      padding: 10px; /* Less padding on smaller screens */
+  }
+
+  .subtitle {
+      font-size: 1rem; /* Smaller font size on mobile */
+  }
+
+  .loading-number {
+      font-size: 1rem; /* Adjust loading number size for mobile */
+  }
+}

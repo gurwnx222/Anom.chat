@@ -1,0 +1,146 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&family=Play:wght@400;700&display=swap');
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 79%;
+  border-radius: 18px;
+  color: white;
+  padding: 13px 20px;
+  position: fixed;
+  z-index: 1000;
+}
+/* Logo and Hamburger Menu Containers */
+.logo-container,
+.hamburger-menu {
+  height: 2.5rem;
+  width: 5.4rem;
+  background: rgba(27, 31, 43, 0.25);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  overflow: hidden;
+}
+.hamburger-menu {
+  position: relative;
+  left: 2.5rem;
+  height: 2.2rem;
+  width: 3.4rem;
+}
+.logo {
+  margin: 0.1rem 0 0 0.5rem;
+  padding: 0.2rem;
+  font-family: "Play", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+/* Toggle Button Styles */
+.menu-toggle {
+  margin: 7.5px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.bar {
+  width: 1.50rem;
+  height: 0.1rem;
+  background: #f1faee;
+  transition: 0.3s ease;
+  border-radius: 2px; 
+}
+.bar.top.open {
+  transform: translateY(6.4px) rotate(45deg);
+}
+
+.bar.middle.open {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.bar.bottom.open {
+  transform: translateY(-7px) rotate(-45deg);
+}
+/* Nav Links (Responsive Menu) */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 50%;
+  max-width: 250px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.nav-links.open {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+/* Nav List Styles */
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  align-items: center;
+}
+.nav-list li {
+  margin: 10px 0;
+}
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+/* Individual Link Styles */
+.home {
+  font-family: 'Orbitron', sans-serif;
+  font-style: italic;
+  background-color: #FAF9F6;
+  padding: 7px;
+  border: 1px solid #FAF9F6;
+  border-radius: 7px;
+}
+.logsign {
+  font-family: 'Roboto', sans-serif;
+  background-color: darkgray;
+  color: white;
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 12px;
+  text-align: center;
+}
+li {
+  font-family: 'Roboto', sans-serif;
+  font-style: oblique;
+}
+/* Section Containers */
+.home-container,
+.about-container,
+.contact-container {
+  background-color: mintcream;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

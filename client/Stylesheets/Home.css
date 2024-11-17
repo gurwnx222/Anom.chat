@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+  background-color: black;
+  color: mintcream;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+.welcome-section {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.get-started-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #121212;
+  background-color: mintcream;;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #45d8b2;
+}
+
+/* Features Section */
+.features-section {
+  width: 100%;
+}
+
+.features-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  opacity: 0.7;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Routes Background */
+.route-container {
+  background-color: #d8c8a0;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Route Names */
+.route-name {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+/* Login/Signup Background */
+.login-signup-container {
+  background-color: black;
+  color: mintcream;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .get-started-button {
+    font-size: 1rem;
+  }
+
+  .features-title {
+    font-size: 1.5rem;
+  }
+
+  .feature-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .route-name {
+    font-size: 1.5rem;
+  }
+}
